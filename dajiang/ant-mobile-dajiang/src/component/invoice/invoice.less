@@ -1,0 +1,145 @@
+.invoice {
+    height: 100%;
+    background-color: rgb(248, 248, 250);
+
+    .invoice_body {
+        padding: 0.2rem;
+        .invoice_list {
+            margin-bottom: 0.3rem;
+
+            .show_tishi {
+                font-size: 0.3rem;
+                text-align: center;
+                color: #999;
+            }
+        }
+
+        .invoice_list_item {
+            margin-top: 0.3rem;
+            padding: 0.15rem 0.25rem;
+            position: relative;
+            background: #fff;
+
+            .list_item_btn {
+                position: absolute;
+                right: 0.1rem;
+                top: 0.1rem;
+                width: 0.24rem;
+                height: 0.24rem;
+                border-radius: 50%;
+                border: 0.01rem solid #fbb303;
+                background: #fff;
+                &.active {
+                    background: #fbb303;
+                }
+            }
+
+            .list_item_name, .list_item_price, .list_item_data {
+                padding: 0.1rem 0;
+                font-size: 0.14rem;
+                line-height: 0.34rem;
+                display: flex;
+                span:nth-child(1) {
+                    display: block;
+                    width: 1.8rem;
+                    padding-right: 0.35rem;
+                }
+                span:nth-child(2) {
+                    flex: 1;
+                }
+            }
+        }
+    }
+    .invoice_footer {
+
+        .total_money {
+            padding: 0 0.28rem;
+            height: 0.58rem;
+            background: #fff;
+            line-height: 0.58rem;
+            font-size: 0.28rem;
+            color: #666;
+            border-radius: 0.05rem;
+        }
+        .total_btn {
+            height: 0.57rem;
+            line-height: 0.57rem;
+            background-color: rgba(251, 179, 3, 1);
+            color: #fff;
+            margin: 0.15rem 0 0.24rem 0;
+            border-radius: 0.05rem;
+            text-align: center;
+        }
+
+        .total_description {
+            background: #fff;
+            border-radius: 0.05rem;
+            padding: 0.16rem;
+            p {
+                font-size: 0.18rem;
+                line-height: 0.28rem;
+                color: #fbb303;
+            }
+        }
+    }
+}
+
+.invoice_details {
+    background-color: rgba(248, 248, 250, 1);
+
+    .next_click {
+        height: 0.54rem;
+        background-color: rgba(251, 179, 3, 1);
+        text-align: center;
+        color: #fff;
+        font-size: 0.34rem;
+        margin-top: 1rem;
+    }
+    
+    .invoice_details_body {
+        .form_item{
+            margin-top: 0.05rem;
+            &:nth-child(2) {
+                .input_text span{
+                    font-size: 0.22rem;
+                }
+            }
+            &:nth-child(4) {
+                .input_text span{
+                    font-size: 0.22rem;
+                }
+            }
+        }
+    }
+}
+
+.invoice_post {
+
+    .next_click {
+        height: 0.54rem;
+        background-color: rgba(251, 179, 3, 1);
+        text-align: center;
+        color: #fff;
+        font-size: 0.34rem;
+        margin-top: 1rem;
+    }
+
+    .form_item{
+        margin-top: 0.05rem;
+        &:nth-child(2) {
+            .input_text span{
+                font-size: 0.22rem;
+            }
+        }
+        &:nth-child(3) {
+            .input_text input{
+                color: rgba(251, 179, 3, 1);
+            }
+        }
+        &:nth-child(4) {
+            .input_text span{
+                font-size: 0.22rem;
+            }
+        }
+    }
+}

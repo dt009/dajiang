@@ -1,0 +1,45 @@
+
+/**
+ * @author wackeCq v_duantao
+ * @file 大匠展示的样式
+ * @date 17/9/23 下午5:21
+ */
+
+.show_card {
+    margin-top: 0.5rem;
+
+    .am-card-header {
+
+        .am-card-header-content {
+            text-align: center !important;
+            flex: 2;
+            img {
+                border-radius: 100%;
+                margin-top: -0.6rem;
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+
+    .am-card-footer {
+        .am-card-footer-content {
+            .card_footer {
+                display: flex;
+                & > span {
+                    flex: 1;
+                    text-align: center;
+
+                    &:first-child {
+                        text-align: left;
+                    }
+
+                    &:last-child {
+                        text-align: right;
+                        font-size: 0.22rem;
+                    }
+                }
+            }
+        }
+    }
+}

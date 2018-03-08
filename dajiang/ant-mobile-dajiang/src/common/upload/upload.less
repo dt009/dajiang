@@ -1,0 +1,142 @@
+/**
+ * @author v_duantao
+ * @file upload 组件的样式
+ * @date 17/9/26 上午11:15
+ */
+
+.common_upload {
+    height: 3.16rem;
+    width: 100%;
+    background: #fff;
+    //border-radius: 0.1rem;
+    //padding: 0.08rem;
+    position: relative;
+
+    // 上传加载遮罩层
+    .upload_cover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+
+        .cover_icon {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -0.3rem;
+            margin-left: -0.3rem;
+        }
+    }
+
+    .upload_photograph, .upload_photo {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 0.1rem;
+        padding: 0.08rem;
+
+        &.upload_photo {
+            padding: 0;
+            border-radius: 0;
+        }
+
+        a {
+            height: 100%;
+            width: 100%;
+            background: url("./images/uploadbg.png");
+            background-size: 100% 100%;
+            display: inline-block;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .photo {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        background: url("./images/uploadtou.png");
+        background-size: 100% 100%;
+
+        .upload_content {
+            width: 2.58rem;
+            margin-left: -1.29rem;
+            color: #fbb303;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .upload_content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 0.54rem;
+        line-height: 0.54rem;
+        text-align: center;
+        padding: 0 0.2rem;
+        margin-left: -0.53rem;
+        margin-top: -0.27rem;
+        font-size: 0.3rem;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 0.27rem;
+        display: inline-block;
+    }
+
+}
+
+#upload_avatar_box {
+    height: 1rem;
+    background: #fff;
+    margin-top: 0.3rem;
+    overflow: hidden;
+
+    .upload_avatar {
+        a {
+            display: flex;
+            height: 100%;
+            line-height: 1rem;
+
+            &:visited, &:hover, &:focus{
+                text-decoration: none;
+            }
+
+
+
+            span {
+                flex: 1;
+                text-align: center;
+                font-size: 0.28rem;
+                color: #444;
+                font-weight: bold;
+
+                &:last-child {
+                    font-family: iconfont;
+                    color: #ccc;
+                }
+            }
+
+            div {
+                flex: 5;
+                height: 100%;
+                margin-left: 0.2rem;
+
+                img {
+                    display: inline;
+                    background: #fff;
+                    height: 0.7rem;
+                    width: 0.7rem;
+                    border-radius: 0.05rem;
+                    margin-bottom: 0.15rem;
+                }
+            }
+        }
+    }
+}

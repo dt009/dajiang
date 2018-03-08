@@ -1,0 +1,123 @@
+/**
+ * @author v_duantao
+ * @file 我的账户样式
+ * @date 2017/11/24
+ */
+
+.page_account {
+  width: 100%;
+
+  .account_header {
+    height: 150px;
+    width: 100%;
+    background: #fbb601;
+    overflow: hidden;
+
+    .header_top {
+      height: 100px;
+      width: 100%;
+
+      .top_img {
+        float: left;
+        height: 80px;
+        width: 80px;
+        background: #fff;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 40px;
+        border-radius: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+
+      .top_balance {
+        float: left;
+        line-height: 110px;
+        color: #fff;
+        font-size: 20px;
+
+        span {
+          font-size: 30px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .header_bottom {
+      text-align: right;
+      line-height: 50px;
+      padding-right: 20px;
+
+      button {
+        margin: 0 12px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .account_date {
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    margin-top: 10px;
+    padding: 0 30px;
+
+    span {
+      font-family: iconfont;
+      color: #fbb601;
+      font-size: 30px;
+    }
+
+    .select_date {
+      float: right;
+
+      input {
+        vertical-align: middle;
+      }
+
+      span.ant-calendar-picker-icon {
+        vertical-align: middle;
+
+        &:after {
+          vertical-align: middle;
+          line-height: 0;
+        }
+      }
+    }
+  }
+
+  .account_record {
+    margin-top: 20px;
+
+    .record_item {
+      padding: 0 10px;
+      height: 50px;
+      width: 100%;
+      line-height: 25px;
+      margin-bottom: 10px;
+      background: #fff;
+
+      .item_left {
+        float: left;
+
+        .left_top {
+          span {
+            margin-right: 30px;
+          }
+        }
+      }
+
+      .item_right {
+        float: right;
+        line-height: 50px;
+        margin-right: 20px;
+        font-size: 20px;
+        color: #fbb601;
+      }
+    }
+  }
+}

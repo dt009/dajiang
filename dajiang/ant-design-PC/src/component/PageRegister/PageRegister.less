@@ -1,0 +1,119 @@
+/**
+ * @author v_duantao
+ * @file 注册和忘记密码的样式
+ * @date 2017/11/22
+ */
+
+.page_register {
+  color: #fff;
+  overflow: hidden;
+
+  .register_form {
+    width: 300px;
+    margin: 50px auto 0;
+
+    h2 {
+      text-align: center;
+      color: #ffff;
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-family: iconfont;
+      margin: 0 10px;
+    }
+
+    input {
+      background: none;
+      border: 0;
+      font-size: 14px;
+      color: #fff;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .form_phone {
+      width: 300px;
+      height: 31px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 10px;
+      line-height: 30px;
+
+      input {
+        width: 220px;
+      }
+    }
+
+    .form_code {
+      height: 30px;
+      width: 300px;
+      margin-bottom: 10px;
+
+      .code_content {
+        float: left;
+        border-bottom: 1px solid #fff;
+      }
+
+      .code_btn {
+        float: right;
+        height: 30px;
+        color: #666;
+        //border: 0;
+      }
+    }
+
+    .form_password {
+      height: 31px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 10px;
+
+      span:last-child {
+        float: right;
+        margin-top: 6px;
+        cursor: pointer;
+      }
+    }
+
+    .form_checkbox {
+      height: 20px;
+      line-height: 20px;
+
+      & > div {
+        height: 20px;
+        line-height: 20px;
+
+        .checkbox_label {
+          padding: 0;
+          background: none;
+          border: 0;
+          margin: 0;
+          color: #fbb601;
+
+          span {
+            margin: 0;
+          }
+        }
+
+        .checkbox {
+          margin: 0;
+          .ant-checkbox {
+            .ant-checkbox-input {
+              margin: 0;
+            }
+            .ant-checkbox-inner {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .form_submit {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.3);
+      color: #fff;
+      border: 0;
+      width: 100%;
+    }
+  }
+}

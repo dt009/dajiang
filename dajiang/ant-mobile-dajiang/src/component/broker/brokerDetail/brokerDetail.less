@@ -1,0 +1,112 @@
+/**
+ * @author v_duantao
+ * @file 知识经济人详情页的样式
+ * @date 17/10/13 下午6:53
+ */
+ .broker_detail {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+
+.broker_detail_body {
+    background-color: rgba(248, 248, 250, 1);
+
+    .broker_card {
+        position: relative;
+        width: 100%;
+        height: 0.85rem;
+        background: #fff;
+        margin-bottom: 0.18rem;
+        padding: 0.1rem 0.18rem;
+        display: flex;
+
+        img {
+            width: 0.64rem;
+            height: 0.64rem;
+            border-radius: 50%;
+        }
+
+        div {
+            flex: 1;
+            color: #666666;
+            font-size: 0.2rem;
+            line-height: 0.26rem;
+            padding-left: 0.18rem;
+
+            div {
+                font-size: 0.26rem;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                padding: 0;
+                line-height: 0.34rem;
+                color: #444444;
+                span {
+                    padding-right: 0.3rem;
+                    color: #fbb303;
+                }
+            }
+        }
+        p {
+            width: 1.5rem;
+            font-size: 0.26rem;
+            line-height: 0.32rem;
+            color: #444444;
+        }
+    }
+
+    .dajiang_info {
+        padding: 0.2rem;
+        font-size: 10px;
+        background: #fff;
+        color: #666;
+        line-height: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+    }
+
+    .container{
+        height: 0.7rem;
+        line-height: 0.7rem;
+        display: flex;
+        width: 100%;
+        background-color: #fff;
+        margin: 0.06rem 0;
+        .footer_tabs{
+            .tabs_title{
+                color: #888;
+            }
+        }
+        a{
+            flex:1;
+            text-align: center;
+            font-size: 0.16rem;
+            color: #888;
+
+            &.active {
+                .tabs_title{
+                    color: #666;
+                    padding-bottom: 0.08rem;
+                    border-bottom: 0.06rem solid #fbb303;
+                }
+            }
+        }
+        .border{
+            width: 0.02rem;
+            height: 0.4rem;
+            color:#ccc;
+            // background-color: #fbb303;
+        }
+    }
+
+    .detail_hint{
+        font-size: 14px;
+        color: #999;
+        line-height: 24px;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+}

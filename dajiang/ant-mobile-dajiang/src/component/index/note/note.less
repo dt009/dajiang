@@ -1,0 +1,107 @@
+/**
+ * @author v_duantao
+ * @file 消息的样式
+ * @date 17/10/12 下午5:31
+ */
+
+.index_note {
+    flex: 1;
+    background: #fff;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    .note_header {
+        height: 0.82rem;
+        width: 100%;
+        background: #1b1b20;
+        font-size: 0.34rem;
+        line-height: 0.82rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .note_list {
+        flex: 1;
+        overflow: auto;
+        .note_group_item {
+            background: #f8f8fa;
+            height:0.9rem;
+            line-height: 0.9rem;
+            display: flex;
+            margin-bottom: 0.2rem;
+            position: relative;
+
+            &:first-child {
+                margin-top: 0.2rem;
+            }
+
+            .note_group_badge {
+                position: absolute;
+                top: -0.1rem;
+                left: 0.05rem;
+                font-size: 0.2rem;
+                .am-badge-text {
+                    font-size: 0.2rem;
+                    width: 0.32rem;
+                    height: 0.32rem;
+                }
+            }
+
+            .group_item_img {
+                height: 0.56rem;
+                width: 0.56rem;
+                margin-top: 0.17rem;
+                flex: 1;
+                margin-left: 0.2rem;
+                margin-right: 0.4rem;
+            }
+
+            .group_item_title {
+                flex: 7;
+                padding-left: 0.2rem;
+            }
+
+            .group_item_icon {
+                font-family: iconfont;
+                margin-right: 0.3rem;
+            }
+        }
+
+        .group_item_list {
+            margin: 0.2rem 0;
+
+            .note_list_item {
+                height: 1.06rem;
+                background: #f8f8fa;
+                margin-top: 0.1rem;
+                line-height: 1.06rem;
+
+                a {
+                    display: flex;
+
+                    img {
+                        height: 0.8rem;
+                        width: 0.8rem;
+                        margin: 0.13rem 0.3rem;
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        font-size: 0.3rem;
+                        color: #444;
+                    }
+                    
+                    time {
+                        font-size: 0.2rem;
+                        color: #888;
+                        flex: 1;
+                        text-align: right;
+                        margin-right: 0.3rem;
+                    }
+                }
+            }
+
+        }
+    }
+}

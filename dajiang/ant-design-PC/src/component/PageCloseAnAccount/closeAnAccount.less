@@ -1,0 +1,127 @@
+.close_an_account {
+    #form_test {
+        display: none;
+    }
+
+    .close_an_account_head {
+        background: #fbb303;
+        padding: 30px 0;
+        p {
+            font-size: 40px;
+            line-height: 48px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .invite_code {
+            display: flex;
+            padding-top: 30px;
+            div {
+                flex: 1;
+
+                &:first-child {
+                    text-align: right;
+                    padding-right: 20px;
+                    color: #fff;
+                }
+                &:last-child {
+                    input {
+                        text-align: left;
+                        width: 70%;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+
+    .close_an_account_body {
+        
+        .zhifufangshi {
+            background: #fff;
+            height: 60px;
+            font-size: 30px;
+            line-height: 60px;
+            color: #888;
+            padding: 0 32px;
+            margin: 30px 0 10px 0;
+        }
+
+        // 支付方式
+        .close_an_account_of_payment {
+        
+            .pay_list_item {
+                position: relative;
+                margin-top: 10px;
+                display: flex;
+                height: 88px;
+                background-color: rgba(255, 255, 255, 1);
+                font-size: 30px;
+                line-height: 88px;
+    
+                span {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin: 23px;
+                }
+                div {
+                    flex: 1;
+                    i {
+                        font-size: 20px;
+                        font-style: normal;
+                    }
+                }
+                em {
+                    position: absolute;
+                    right: 50px;
+                    top: 35px;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #fbb303;
+                    border-radius: 50%;
+                    background: #fff;
+                    &.active {
+                        background: #fbb303;
+                    }
+                }
+                &:nth-child(1) {
+                    span {
+                        background: url('./image/yue.png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+                &:nth-child(2) {
+                    span {
+                        background: url('./image/weixin.png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+                &:nth-child(3) {
+                    span {
+                        background: url('./image/zhifubao.png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+                &:nth-child(4) {
+                    span {
+                        background: url('./image/yinlian.png') no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+        .close_an_account_btn {
+            height: 54px;
+            width: 213px;
+            margin: 50px auto;
+            font-size: 28px;
+            font-weight: 100;
+            background-color: rgba(251, 179, 3, 1);
+            color: #fff;
+            text-align: center;
+            line-height: 54px;
+        }
+    
+    }
+}

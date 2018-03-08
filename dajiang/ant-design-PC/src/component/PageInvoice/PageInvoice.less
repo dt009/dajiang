@@ -1,0 +1,146 @@
+.page_invoice {
+    .page_invoice_title {
+        font-size: 18px;
+        line-height: 24px;
+        color: #444;
+    }
+    .invoive_list {
+        .invoice_list_item {
+            margin-top: 10px;
+            padding: 0px 20px;
+            position: relative;
+            background: #fff;
+
+            .list_item_btn {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border: 1px solid #fbb303;
+                background: #fff;
+                &.active {
+                    background: #fbb303;
+                }
+            }
+
+            .list_item_name, .list_item_price, .list_item_data {
+                font-size: 14px;
+                line-height: 26px;
+                display: flex;
+                span:nth-child(1) {
+                    display: block;
+                    width: 180px;
+                    padding-right: 35px;
+                }
+                span:nth-child(2) {
+                    flex: 1;
+                }
+            }
+        }
+    }
+    .invoice_footer {
+        
+        .total_money {
+            padding: 0 20px;
+            margin: 20px 0 10px 0;
+            height: 30px;
+            background: #fff;
+            line-height: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        .total_btn {
+            height: 57px;
+            width: 213px;
+            line-height: 57px;
+            background-color: rgba(251, 179, 3, 1);
+            color: #fff;
+            margin: 15px auto 24px;
+            text-align: center;
+        }
+
+        .total_description {
+            background: #fff;
+            padding: 16px;
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                color: #fbb303;
+            }
+        }
+    }
+
+    // 遮罩浮层
+    .invoice_show {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        background: rgba(155, 155, 155, 0.3);
+
+        .invoice_show_content {
+            margin: 100px auto 0;
+            width: 700px;
+            height: 500px;
+            background: #fff;
+            padding: 10px;
+            .invoice_show_content_head {
+                text-align: right;
+                font-size: 14px;
+                line-height: 14px;
+                span {
+                    cursor: pointer;
+                }
+            }
+            .invoice_show_content_head_text {
+                text-align: center;
+                font-size: 14px;
+                color: red;
+            }
+            .show_ipt_box {
+                font-size: 14px;
+                color: #333;
+
+                .ipt_item {
+                    display: flex;
+                    padding-top: 10px;
+                    .ipt_item_left {
+                        line-height: 30px;
+                        text-align: right;
+                        width: 200px;
+                        span {
+                            color: red;
+                        }
+                    }
+                    .ipt_item_right {
+                        flex: auto;
+                        input {
+                            display: block;
+                            width: 80%;
+                            padding: 0 5px;
+                            height: 100%;
+                            border: 0;
+                            background: #fff;
+                            outline: none;
+                            border: 1px solid #999;
+                            border-radius: 3px;
+                            height: 30px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .invoice_btn {
+            padding-top: 50px;
+            text-align: center;
+            button {
+                margin: 0 10px;
+            }
+        }
+    }
+}

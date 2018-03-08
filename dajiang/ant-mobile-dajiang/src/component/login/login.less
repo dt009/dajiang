@@ -1,0 +1,112 @@
+
+
+.login {
+    background: #000 url("./images/beijingtu.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    flex: 1;
+
+    .login_logo {
+        width: 1.44rem;
+        height: 1.44rem;
+        margin: 1.88rem auto 2rem;
+        background: url("./images/logo.png");
+        background-size: 100% 100%;
+        display: block;
+    }
+
+    .login_form {
+        width: 90%;
+        margin: 0 auto;
+
+        .login_userName {
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.6);
+
+            span {
+                background: url("./images/account.png");
+                display: inline-block;
+                vertical-align: top;
+                height: 0.36rem;
+                width: 0.36rem;
+                background-size: cover;
+                margin: 0 0.2rem 0.2rem 0.06rem;
+            }
+        }
+
+        .login_password {
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.6);
+            margin-top: 0.36rem;
+            display: flex;
+
+            input {
+                flex: 1;
+                margin-bottom: 0.1rem;
+            }
+
+            span {
+                display: inline-block;
+                vertical-align: top;
+                width: 0.36rem;
+                height: 0.36rem;
+
+
+                &:first-child {
+                    background: url("./images/password.png");
+                    background-size: 100% 100%;
+                    margin: 0 0.2rem 0.12rem 0.08rem;
+                }
+
+                &:last-child {
+                    background: url("./images/display.png");
+                    background-size: 100% 100%;
+                    margin-right: 0.1rem;
+                }
+            }
+        }
+
+        .login_other {
+            margin-top: 0.26rem;
+            font-size: 0.28rem;
+
+            a:first-child {
+                color: #fdb805;
+                margin-left: 0.1rem;
+            }
+
+            a:last-child {
+                color: #fff;
+                text-align: right;
+                float: right;
+            }
+        }
+
+        .login_submit {
+            width: 100%;
+            height: 0.86rem;
+            margin-top: 1.5rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 0.2rem;
+
+            button {
+                width: 100%;
+                height: 100%;
+                font-size: 0.34rem;
+                color: #fff;
+                background: none;
+                border-radius: 0.2rem;
+                border: 0;
+                outline: none;
+            }
+        }
+    }
+}
+
+.login input {
+    background: none !important;
+    border: 0;
+    color: #fff;
+    font-size: 0.34rem;
+}

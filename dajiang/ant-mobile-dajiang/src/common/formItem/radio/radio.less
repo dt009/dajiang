@@ -1,0 +1,67 @@
+/**
+ * @author v_duantao
+ * @file 单选框组件的样式
+ * @date 17/9/29 上午11:22
+ */
+
+.common_radio {
+    height: 0.74rem;
+    width: 100%;
+    background: #fff;
+    padding: 0 0.2rem;
+    font-size: 0.28rem;
+    line-height: 0.74rem;
+    display: flex;
+
+    .radio_title {
+        margin-right: 0.2rem;
+    }
+
+    .radio_content {
+        display: flex;
+
+        .radio_list {
+            margin-right: 0.2rem;
+            line-height: 0.74rem;
+
+            .radio_item {
+                display: flex;
+                height: 0.28rem;
+                line-height: 0.28rem;
+                display: inline-block;
+
+                input[type="radio"] {
+                    display: inline-block;
+                    height: 0.28rem;
+                    width: 0.28rem;
+                    vertical-align: middle;
+                    margin: 0;
+                    position: relative;
+                    visibility: hidden;
+                }
+                span {
+                    vertical-align: middle;
+                    height: 0.28rem;
+                    display: inline-block;
+                    margin-left: 0.1rem;
+                }
+
+                input[type="radio"]:after {
+                    content: '';
+                    display: block;
+                    width: 0.28rem;
+                    height: 0.28rem;
+                    position: absolute;
+                    background: #fff url("./images/radio_no.png");
+                    background-size: 100% 100%;
+                    visibility: visible;
+                }
+
+                input[type="radio"]:checked:after {
+                    background: url("./images/radio.png");
+                    background-size: 100% 100%;
+                }
+            }
+        }
+    }
+}

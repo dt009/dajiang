@@ -1,0 +1,33 @@
+/**
+ * @author v_duantao
+ * @file 一些选择器在页面中展示的部分的样式
+ * @date 17/9/28 下午5:40
+ */
+
+
+
+.custom_children_show {
+    display: flex;
+    height: 0.74rem;
+    line-height: 0.74rem;
+
+    span {
+        display: inline-block;
+        color: #444;
+
+        &:first-child {
+            font-weight: bold;
+            flex: 1;
+        }
+        &:last-child {
+            font-family: iconfont;
+            width: 0.3rem;
+        }
+    }
+
+    div {
+        flex: 3;
+        line-height: 0.74rem;
+        margin-left: 0.1rem;
+    }
+}

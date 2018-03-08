@@ -1,0 +1,26 @@
+## 过滤maven文件 ##
+/target/
+/bin/
+/logs/
+*/logs/
+*/target/
+
+## 过滤idea 配置文件 ##
+*.iml
+*.ipr
+*.iws
+/.idea/
+
+## ignore eclipse file ##
+.classpath
+*/.classpath
+.project
+*/.project
+/.settings/
+*/.settings/
+
+## 过滤其他 ##
+*.pyc
+*/*.pyc
+*.bat
+*.sh

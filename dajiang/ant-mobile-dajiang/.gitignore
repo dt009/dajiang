@@ -1,0 +1,9 @@
+.idea
+node_modules
+.DS.Store
+.project
+dist
+npm-debug.log
+.idea/misc.xml
+ant-mobile-dajiang.iml
+.idea/misc.xml

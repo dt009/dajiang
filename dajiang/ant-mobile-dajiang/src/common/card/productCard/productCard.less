@@ -1,0 +1,96 @@
+/**
+ * @author v_duantao
+ * @file 展示商品的样式
+ * @date 17/10/15 下午4:22
+ */
+
+.show_product_card {
+    position: relative;
+    margin-top: 0.2rem;
+
+    .product_show_card {
+        display: block;
+        background: #fff;
+        border-radius: 0.1rem;
+
+        .product_card_header {
+            position: relative;
+            text-align: center;
+            border-bottom: 0.5px solid #f5f5f5;
+
+            .header_title {
+                font-size: 0.26rem;
+                color: #444;
+                line-height: 0.5rem;
+            }
+
+            .product_status {
+                position: absolute;
+                font-size: 0.2rem;
+                color: #888;
+                right: 0.24rem;
+                top: 0;
+                line-height: 0.5rem;
+            }
+        }
+
+        .product_card_content {
+            padding: 0 0.1rem;
+
+            .content_name {
+                font-size: 0.26rem;
+                color: #fbb303;
+                line-height: 0.4rem;
+            }
+            .conent_detail {
+                padding: 0 0.1rem;
+                margin: 0.1rem 0;
+                color: #666;
+                font-size: 0.24rem;
+                text-align: justify;
+            }
+        }
+
+        .product_card_footer {
+            display: flex;
+            width: 100%;
+            border-top: 0.5px solid #f5f5f5;
+            padding: 0.1rem;
+            font-size: 0.2rem;
+
+            .card_footer_date {
+                color: #888;
+                flex: 1;
+            }
+
+            .card_footer_sun {
+                color: #fbb303;
+                flex: 1;
+                text-align: center;
+            }
+            .card_footer_false {
+                flex: 1;
+            }
+        }
+    }
+
+    .card_product_show_price {
+        position: absolute;
+        bottom: 0.09rem;
+        right: 0.2rem;
+
+        span {
+            font-size: 0.16rem;
+            color: #8e8e8e;
+            vertical-align: bottom;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 0.32rem;
+            color: #fbb303;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+}

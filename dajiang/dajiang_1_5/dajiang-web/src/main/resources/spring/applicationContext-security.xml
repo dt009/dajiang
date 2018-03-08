@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://www.springframework.org/schema/security"
+             xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+    <global-method-security pre-post-annotations="enabled"/>
+    <!-- 符合以下url的不做认证 -->
+    <!-- 该路径下的资源不用过滤 -->
+    <!-- access-decision-manager-ref：指定了自定义的访问策略管理器。 -->
+    <!--auto-config = true 则使用from-login. 如果不使用该属性 则默认为http-basic(没有session). -->
+    <!--access-denied-page：访问拒绝时转向的页面。 -->
+    <!-- <http pattern="/authenticate/**" security="none" /> -->
+    <!--<http use-expressions="true" access-decision-manager-ref="securityAccessDecisionManager"-->
+    <!--entry-point-ref="restAuthenticationEntryPoint">-->
+    <!--&lt;!&ndash;- 不需要安全校验请求信息 &ndash;&gt;-->
+    <!--<intercept-url pattern="/resources/*" access="none"/>-->
+    <!--<intercept-url pattern="/login/*" access="none"/>-->
+    <!--<intercept-url pattern="/**" access="none"/>-->
+    <!--&lt;!&ndash;<intercept-url pattern="/common/*" access="isAuthenticated()"/>&ndash;&gt;-->
+    <!--<form-login login-page='/resources/logintest.jsp'-->
+    <!--authentication-success-handler-ref="loginSuccessHandler"-->
+    <!--authentication-failure-handler-ref="loginFailureHandler"/>-->
+
+    <!--&lt;!&ndash; invalidate-session：指定在退出系统时是否要销毁Session。&ndash;&gt;-->
+    <!--<logout invalidate-session="true" success-handler-ref="logoutSuccessHandler"/>-->
+
+    <!--&lt;!&ndash; 异常返回页面 &ndash;&gt;-->
+    <!--<access-denied-handler ref="my403"/>-->
+    <!--&lt;!&ndash; 实现免登陆验证 &ndash;&gt;-->
+    <!--<remember-me user-service-ref="userDetailsServiceImpl"/>-->
+    <!--&lt;!&ndash; 关闭csrf &ndash;&gt;-->
+    <!--<csrf disabled="true"/>-->
+    <!--&lt;!&ndash; max-sessions:允许用户帐号登录的次数。范例限制用户只能登录一次。 &ndash;&gt;-->
+    <!--&lt;!&ndash; 此值表示：用户第二次登录时，前一次的登录信息都被清空。 &ndash;&gt;-->
+    <!--&lt;!&ndash; exception-if-maximum-exceeded:默认为false， &ndash;&gt;-->
+    <!--&lt;!&ndash; 当exception-if-maximum-exceeded="true"时系统会拒绝第二次登录。 &ndash;&gt;-->
+    <!--<session-management>-->
+    <!--<concurrency-control max-sessions="2"/>-->
+    <!--</session-management>-->
+
+    <!--<headers>-->
+    <!--<frame-options policy="SAMEORIGIN"/>-->
+    <!--</headers>-->
+
+    <!--</http>-->
+
+    <!--<beans:bean id="restAuthenticationEntryPoint"-->
+    <!--class="com.dajiang.app.common.auth.RestAuthenticationEntryPoint">-->
+    <!--</beans:bean>-->
+
+    <!--&lt;!&ndash;决策管理器，用于判断用户需要访问的资源与用户所拥有的角色是否匹配 &ndash;&gt;-->
+    <!--<beans:bean id="securityAccessDecisionManager"-->
+    <!--class="com.dajiang.app.common.auth.SecurityAccessDecisionManager">-->
+    <!--</beans:bean>-->
+
+
+    <!--&lt;!&ndash; 登录校验 &ndash;&gt;-->
+    <!--<authentication-manager>-->
+    <!--<authentication-provider ref="authenticationProvider"/>-->
+    <!--</authentication-manager>-->
+    <!--&lt;!&ndash; spring-security 认证 &ndash;&gt;-->
+    <!--<beans:bean id="authenticationProvider" class="com.dajiang.app.common.auth.AuthenticationProvider">-->
+    <!--</beans:bean>-->
+
+    <!--&lt;!&ndash; 登录失败 &ndash;&gt;-->
+    <!--<beans:bean id="loginFailureHandler"-->
+    <!--class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">-->
+    <!--</beans:bean>-->
+    <!--&lt;!&ndash;登录 &ndash;&gt;-->
+    <!--<beans:bean id="loginSuccessHandler"-->
+    <!--class="com.dajiang.app.common.auth.LoginSuccessHandler"/>-->
+
+    <!--&lt;!&ndash; 退出 &ndash;&gt;-->
+    <!--<beans:bean id="logoutSuccessHandler"-->
+    <!--class="com.dajiang.app.common.auth.LogoutSuccessHandler"/>-->
+
+    <!--<beans:bean id="my403" class="com.dajiang.app.common.auth.MyAccessDeniedHandler">-->
+    <!--<beans:property name="errorPage" value="/resources/aa.html"/>-->
+    <!--</beans:bean>-->
+
+</beans:beans>

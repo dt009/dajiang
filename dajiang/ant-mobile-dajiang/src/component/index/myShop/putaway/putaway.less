@@ -1,0 +1,26 @@
+
+.putaway_componet{
+    .am-card-header{
+        margin: 0 auto;
+    }
+    .am-card-footer {
+        .am-card-footer-content {
+            .card_footer {
+                display: flex;
+                & > span {
+                    flex: 1;
+                    text-align: center;
+
+                    &:first-child {
+                        text-align: left;
+                    }
+
+                    &:last-child {
+                        text-align: right;
+                        font-size: 0.22rem;
+                    }
+                }
+            }
+        }
+    }
+}

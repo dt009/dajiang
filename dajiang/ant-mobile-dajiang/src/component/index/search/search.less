@@ -1,0 +1,132 @@
+/**
+ * @author v_duantao
+ * @file 这是搜索页面的样式
+ * @date 17/10/16 下午2:57
+ */
+
+.index_search {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    .search_type {
+        margin-bottom: 0.1rem;
+
+        .common_radio {
+
+            .radio_content {
+                display: flex;
+                width: 100%;
+
+                & > div {
+                    margin-left: 0.2rem;
+                }
+            }
+        }
+    }
+
+    .search_options {
+
+        .search_product {
+
+            .search_price {
+                display: flex;
+                height: 0.70rem;
+                margin: 0.02rem 0;
+                line-height: 0.70rem;
+                font-size: 0.28rem;
+
+                .price_label {
+                    height: 0.5rem;
+                    padding: 0 0.2rem;
+                    line-height: 0.5rem;
+                    background: #fff;
+                    margin: 0.1rem;
+                    border-radius: 0.1rem;
+                }
+
+                input {
+                    width: 2rem;
+                    margin: 0.1rem 0.2rem 0;
+                    height: 0.5rem;
+                    border-radius: 0.1rem;
+                    border: 0;
+                    line-height: 0.7rem;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .search_keyword {
+        margin-top: 0.1rem;
+        display: flex;
+        margin-bottom: 0.1rem;
+
+        .keyword_input {
+            padding-right: 0.2rem;
+            display: flex;
+            background: #fff;
+            margin-left: 0.2rem;
+            line-height: 0.74rem;
+            border-radius: 0.1rem;
+
+            span {
+                font-family: iconfont;
+                margin-left: 0.2rem;
+                color: #fbb303;
+            }
+
+            .form_item {
+                padding-left: 0;
+            }
+        }
+
+        .search_submit {
+            height: 0.74rem;
+            line-height: 0.74rem;
+            background: #fff;
+            padding: 0 0.2rem;
+            margin-left: 0.1rem;
+            border-radius: 0.1rem;
+            font-size: 0.2rem;
+            color: #444;
+        }
+    }
+
+    .search_result_list {
+        margin: 0 0.2rem;
+        flex: 1;
+        overflow: auto;
+        padding-bottom: 0.2rem;
+
+        .broker_card {
+            background: #fff;
+            margin-top: 0.2rem;
+            width: 100%;
+            display: flex;
+            padding: 0.15rem;
+            font-size: 0.26rem;
+            line-height: 0.64rem;
+
+            .card_img {
+                height: 0.64rem;
+                width: 0.64rem;
+                border-radius: 50%;
+                margin-right: 0.2rem;
+            }
+
+            .card_ckoNickname {
+                color: #fbb303;
+                flex: 1;
+            }
+
+            .card_ckoName {
+                flex: 1;
+                color: #4d4d4d;
+            }
+        }
+    }
+}
